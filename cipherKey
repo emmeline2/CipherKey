@@ -1,0 +1,12 @@
+%Emmeline Pearson - z5178618
+%10.16.2017
+
+clear, close all
+format compact
+letters = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',' ' ];
+for x = 1:27
+  cipher = x * (2^7);
+  cipher = mod(cipher, 55); 
+  fprintf(letters(x));
+  disp(cipher); 
+end
